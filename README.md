@@ -3,8 +3,8 @@
 
 simple App for :-
 
-> Creating User
-> Add User
+- Creating User
+- Add User
 
 ```
 with Validation And Security Handling.
