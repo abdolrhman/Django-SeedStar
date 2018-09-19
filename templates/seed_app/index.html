@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>First App</title>
+  </head>
+  <body>
+    <h1>Hello world this is inddex.html!</h1>
+    {{ AccessRecord }}
+    {% if AccessRecord %}
+    <table>
+      <thead>
+        <th>site name</th>
+        <th>data accessd</th>
+      </thead>
+      {% for acc in AccessRecord %}
+      <tr>
+        <td>{{ acc.name }}</td>
+        <td>{{ acc.date }}</td>
+      </tr>
+      {% endfor %}
+    </table>
+    {% else %}
+      <p>no access date</p>
+    {% endif %}
+  </body>
+</html>
